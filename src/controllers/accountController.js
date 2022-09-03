@@ -4,6 +4,7 @@ const { buildApiResponse } = require("../helpers/staticMethods");
 
 const login = async (req, res) => {
     try {
+        logger.info("Acessado POST /account/login");
         const { email, password } = req.body;
 
         const resultLogin = await accService.login({ email, password });

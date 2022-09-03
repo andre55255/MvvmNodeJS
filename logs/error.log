@@ -1,1 +1,19 @@
 2022-09-03 01:14:47:1447 - [31merror[39m: [31mErro validação dos dados da requisição: Senha não informada[39m
+2022-09-03 14:13:53:1353 - [31merror[39m: [31mErro validação dos dados da requisição: Perfis do usuário não informados[39m
+2022-09-03 14:14:35:1435 - [31merror[39m: [31mErro validação dos dados da requisição: Primeiro nome não informado[39m
+2022-09-03 14:14:58:1458 - [31merror[39m: [31mErro validação dos dados da requisição: A senha deve conter no mínimo 8 caracteres, sendo 1 especial e 1 letra maiúscula[39m
+2022-09-03 14:15:16:1516 - [31merror[39m: [31mErro validação dos dados da requisição: A senha deve conter no mínimo 8 caracteres, sendo 1 especial e 1 letra maiúscula[39m
+2022-09-03 14:15:28:1528 - [31merror[39m: [31mErro validação dos dados da requisição: A senha deve conter no mínimo 8 caracteres, sendo 1 especial e 1 letra maiúscula[39m
+2022-09-03 14:15:55:1555 - [31merror[39m: [31mErro validação dos dados da requisição: A senha deve conter no mínimo 8 caracteres, sendo 1 especial e 1 letra maiúscula[39m
+2022-09-03 14:16:55:1655 - [31merror[39m: [31mErro validação dos dados da requisição: Id deve ser informado com o valor -1[39m
+2022-09-03 14:17:05:175 - [31merror[39m: [31muserRepository create - Exceção: TypeError: trans.insert is not a function[39m
+2022-09-03 14:17:05:175 - [31merror[39m: [31muserService create - Erro ao inserir usuário no banco de dados[39m
+2022-09-03 14:18:20:1820 - [31merror[39m: [31muserRepository create - Exceção: TypeError: trans.insert is not a function[39m
+2022-09-03 14:18:20:1820 - [31merror[39m: [31muserService create - Erro ao inserir usuário no banco de dados[39m
+2022-09-03 14:18:47:1847 - [31merror[39m: [31muserRepository create - Exceção: TypeError: user.forEach is not a function[39m
+2022-09-03 14:18:47:1847 - [31merror[39m: [31muserService create - Erro ao inserir usuário no banco de dados[39m
+2022-09-03 14:20:56:2056 - [31merror[39m: [31muserRepository getByEmail - Exceção: Error: select * from `users` inner join `users_roles` on `users_roles`.`id` = `users`.`id` inner join `roles` on `users_roles`.`id_role` = `roles`.`id` where `email` = 'admin@uorak.com' and `disabled_at` is null - Unknown column 'users_roles.id' in 'on clause'[39m
+2022-09-03 14:24:25:2425 - [31merror[39m: [31muserRepository getByEmail - Exceção: Error: select * from `users` inner join `users_roles` on `users_roles`.`id` = `users`.`id` inner join `roles` on `users_roles`.`id_role` = `roles`.`id` where `email` = 'admin@uorak.com' and `disabled_at` is null - Unknown column 'users_roles.id' in 'on clause'[39m
+2022-09-03 14:26:56:2656 - [31merror[39m: [31muserRepository create - Exceção: Error: insert into `users` (`email`, `first_name`, `last_name`, `password`) values ('admin@uorak.com', 'Admin', DEFAULT, '$2b$10$iB42qqyMzkH.PVkJHam6euB7aW20.Rhfk7n9N5bX8eJClvt5x0Wn2') - Duplicate entry 'admin@uorak.com' for key 'users.users_email_unique'[39m
+2022-09-03 14:26:56:2656 - [31merror[39m: [31muserService create - Erro ao inserir usuário no banco de dados[39m
+2022-09-03 14:27:22:2722 - [31merror[39m: [31muserRepository getById - Exceção: Error: select * from `users` inner join `users_roles` on `users_roles`.`id` = `users`.`id` inner join `roles` on `users_roles`.`id_role` = `roles`.`id` where `id` = 7 and `disabled_at` is null - Column 'id' in where clause is ambiguous[39m
